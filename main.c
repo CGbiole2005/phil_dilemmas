@@ -1,22 +1,35 @@
 #include <stdio.h>
 
-int main() {
-    
-    // input: fahrenheit
-    //declare variables
-    float fahrenheit;
-    float celsius;
+int main () {
+  int grade;
 
-    //input: fahrenheit
-    printf("Write the fahrenheit value: "); //display: ask the user for an input
-    scanf("%f", &fahrenheit);
-    printf("fahrenheit %.2f\n",fahrenheit);
-    
-    //process: celsius= (fahrenheight - 31) *5 /9
-    celsius = (fahrenheit - 32) * 5/9;
-    
-    //output: fahrenheit
-    printf("celsius =%.2f",celsius);
+Printf("Enter your grade: ");
 
-    return 0;
+scanf("%d", &grade);
+
+if (grade < 0 || grade > 100) {
+  printf("Invalid Grade");
+}
+
+Else if (grade >= 90) {
+  printf("A");
+}
+
+Else if (grade >= 80) {
+  printf("B");
+}
+
+Else if (grade >= 70) {
+  printf("C");
+}
+
+Else if (grade >= 60) {
+  printf("D");
+}
+
+else {
+  printf("F");
+}
+
+return 0;
 }
